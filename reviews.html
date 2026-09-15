@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reviews — MORROW</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Core collection — designed for the days ahead</div>
+
+  <header>
+    <a href="index.html" class="brand">MORROW</a>
+    <button class="menu-button" aria-label="Open menu">☰</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="reviews.html" class="active">Reviews</a>
+      <a href="about.html">About</a>
+      <a href="bag.html">Bag<span class="bag-count" id="bagCount">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header reveal">
+      <div class="eyebrow">Customer feedback</div>
+      <h1>Reviews</h1>
+      <p>What people are saying about the Core Hoodie across every colorway.</p>
+    </section>
+
+    <section class="review-summary">
+      <div class="review-score reveal">
+        <div class="big">4.8</div>
+        <div class="stars">★★★★★</div>
+        <div class="count">Based on 128 reviews</div>
+      </div>
+
+      <div class="rating-bars reveal delay-1">
+        <div class="rating-bar-row">
+          <span>5 stars</span>
+          <div class="rating-bar-track"><div class="rating-bar-fill" style="--target-width: 82%;"></div></div>
+          <span>82%</span>
+        </div>
+        <div class="rating-bar-row">
+          <span>4 stars</span>
+          <div class="rating-bar-track"><div class="rating-bar-fill" style="--target-width: 12%;"></div></div>
+          <span>12%</span>
+        </div>
+        <div class="rating-bar-row">
+          <span>3 stars</span>
+          <div class="rating-bar-track"><div class="rating-bar-fill" style="--target-width: 4%;"></div></div>
+          <span>4%</span>
+        </div>
+        <div class="rating-bar-row">
+          <span>2 stars</span>
+          <div class="rating-bar-track"><div class="rating-bar-fill" style="--target-width: 1%;"></div></div>
+          <span>1%</span>
+        </div>
+        <div class="rating-bar-row">
+          <span>1 star</span>
+          <div class="rating-bar-track"><div class="rating-bar-fill" style="--target-width: 1%;"></div></div>
+          <span>1%</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="review-list">
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <div class="review-meta">
+          <span class="review-name">Daniel K.</span>
+          <span class="verified">Verified buyer</span>
+          <span class="review-date">Aug 29, 2026</span>
+        </div>
+        <div class="review-title">Fits exactly like the photos</div>
+        <p class="review-body">Ordered a medium in the Sky Blue and the oversized cut is spot on. The fabric feels a lot more premium than I expected for the price.</p>
+      </div>
+
+      <div class="review-card reveal delay-1">
+        <div class="stars">★★★★★</div>
+        <div class="review-meta">
+          <span class="review-name">Priya S.</span>
+          <span class="verified">Verified buyer</span>
+          <span class="review-date">Aug 21, 2026</span>
+        </div>
+        <div class="review-title">My new travel go-to</div>
+        <p class="review-body">Wore the Default black on a long flight and it held up perfectly — didn't wrinkle, stayed comfortable, and the pockets are deep.</p>
+      </div>
+
+      <div class="review-card reveal delay-2">
+        <div class="stars">★★★★☆</div>
+        <div class="review-meta">
+          <span class="review-name">Marcus T.</span>
+          <span class="verified">Verified buyer</span>
+          <span class="review-date">Aug 14, 2026</span>
+        </div>
+        <div class="review-title">Great quality, runs slightly large</div>
+        <p class="review-body">Sizing runs a little big on the Forest Green — I'm usually a large but the medium fit fine given the oversized design.</p>
+      </div>
+
+      <div class="review-card reveal delay-3">
+        <div class="stars">★★★★★</div>
+        <div class="review-meta">
+          <span class="review-name">Aiko N.</span>
+          <span class="verified">Verified buyer</span>
+          <span class="review-date">Aug 3, 2026</span>
+        </div>
+        <div class="review-title">Anti Venom is a standout</div>
+        <p class="review-body">Was worried a white hoodie would show dirt fast, but it's held up well after a few washes. The black logo print looks sharp against it.</p>
+      </div>
+
+      <div class="review-card reveal delay-4">
+        <div class="stars">★★★★☆</div>
+        <div class="review-meta">
+          <span class="review-name">Leo H.</span>
+          <span class="verified">Verified buyer</span>
+          <span class="review-date">Jul 27, 2026</span>
+        </div>
+        <div class="review-title">Solid everyday set</div>
+        <p class="review-body">Comfortable enough to wear all day. Picked up the Light Gray and it goes with everything.</p>
+      </div>
+    </section>
+
+    <div class="write-review reveal">
+      <p>Bought something from Morrow? We'd love to hear about it.</p>
+      <a href="about.html" class="button">Write a review</a>
+    </div>
+  </main>
+
+  <footer>
+    <small>© 2026 Morrow Core Active</small>
+    <small>Designed for tomorrow</small>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

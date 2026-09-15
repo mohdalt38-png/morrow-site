@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — MORROW</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Core collection — designed for the days ahead</div>
+
+  <header>
+    <a href="index.html" class="brand">MORROW</a>
+    <button class="menu-button" aria-label="Open menu">☰</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="about.html" class="active">About</a>
+      <a href="bag.html">Bag<span class="bag-count" id="bagCount">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-block reveal">
+      <div class="eyebrow">About Morrow</div>
+      <h1>Built for the days ahead.</h1>
+      <p>Morrow started with a simple idea: activewear should look as sharp standing still as it does moving. The Core collection is the first step — a minimal hoodie set designed for training, travel, and everything in between.</p>
+      <p>Every piece is built with premium soft-touch fabric, an oversized silhouette, and the signature Morrow mark, now available across five colorways from the classic Default black to the standout Anti Venom.</p>
+    </section>
+
+    <section class="newsletter reveal delay-1">
+      <div class="eyebrow">Stay in motion</div>
+      <h2>Join Morrow</h2>
+      <p>Get early access to new releases and limited drops.</p>
+      <form class="signup" id="signupForm">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit">Sign up →</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2026 Morrow Core Active</small>
+    <small>Designed for tomorrow</small>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

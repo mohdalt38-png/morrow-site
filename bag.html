@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Bag — MORROW</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Core collection — designed for the days ahead</div>
+
+  <header>
+    <a href="index.html" class="brand">MORROW</a>
+    <button class="menu-button" aria-label="Open menu">☰</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="about.html">About</a>
+      <a href="bag.html" class="active">Bag<span class="bag-count" id="bagCount">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header reveal">
+      <div class="eyebrow">Your bag</div>
+      <h1>Bag</h1>
+    </section>
+
+    <section class="bag-page">
+      <div id="bagEmpty" class="bag-empty" style="display:none;">
+        <p>Your bag is empty.</p>
+        <a href="products.html" class="button">Continue shopping</a>
+      </div>
+
+      <div id="bagItems" class="bag-items"></div>
+
+      <div id="bagSummary" class="bag-summary">
+        <div class="bag-summary-row">
+          <span>Subtotal</span>
+          <span id="bagSubtotal">S$0.00</span>
+        </div>
+        <div class="bag-summary-row">
+          <span>Shipping</span>
+          <span>Free</span>
+        </div>
+        <div class="bag-summary-row total">
+          <span>Total</span>
+          <span id="bagTotal">S$0.00</span>
+        </div>
+        <a href="checkout.html" id="checkoutLink" class="button" style="text-align:center; margin-top: 10px;">Proceed to checkout</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2026 Morrow Core Active</small>
+    <small>Designed for tomorrow</small>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

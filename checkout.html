@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — MORROW</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Core collection — designed for the days ahead</div>
+
+  <header>
+    <a href="index.html" class="brand">MORROW</a>
+    <button class="menu-button" aria-label="Open menu">☰</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="about.html">About</a>
+      <a href="bag.html">Bag<span class="bag-count" id="bagCount">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header reveal">
+      <div class="eyebrow">Almost there</div>
+      <h1>Checkout</h1>
+    </section>
+
+    <div id="checkoutStep">
+      <section class="checkout-grid">
+        <form class="checkout-form" id="checkoutForm">
+          <div class="form-section-title">Contact</div>
+          <div class="form-row">
+            <label>Email</label>
+            <input type="email" required placeholder="you@email.com" />
+          </div>
+
+          <div class="form-section-title">Shipping address</div>
+          <div class="form-row two-col">
+            <div class="form-row">
+              <label>First name</label>
+              <input type="text" required />
+            </div>
+            <div class="form-row">
+              <label>Last name</label>
+              <input type="text" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <label>Address</label>
+            <input type="text" required placeholder="Street address" />
+          </div>
+          <div class="form-row two-col">
+            <div class="form-row">
+              <label>City</label>
+              <input type="text" required />
+            </div>
+            <div class="form-row">
+              <label>Postal code</label>
+              <input type="text" required />
+            </div>
+          </div>
+
+          <div class="form-section-title">Payment</div>
+          <div class="form-row">
+            <label>Card number</label>
+            <input type="text" required placeholder="•••• •••• •••• ••••" inputmode="numeric" maxlength="19" />
+          </div>
+          <div class="form-row two-col">
+            <div class="form-row">
+              <label>Expiry</label>
+              <input type="text" required placeholder="MM / YY" />
+            </div>
+            <div class="form-row">
+              <label>CVC</label>
+              <input type="text" required placeholder="•••" inputmode="numeric" maxlength="4" />
+            </div>
+          </div>
+
+          <button type="submit" class="bag-button">
+            <span>Place order</span>
+            <span>→</span>
+          </button>
+        </form>
+
+        <div class="order-summary reveal delay-1">
+          <h3>Order summary</h3>
+          <div id="checkoutSummary"></div>
+          <div class="bag-summary-row total" style="margin-top: 16px;">
+            <span>Total</span>
+            <span id="checkoutTotal">S$0.00</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="checkoutSuccess" class="checkout-success" style="display:none;">
+      <div class="checkmark">✓</div>
+      <h1>Order placed</h1>
+      <p>Thanks for shopping with Morrow — a confirmation has been sent to your email.</p>
+      <a href="index.html" class="button">Back to home</a>
+    </div>
+  </main>
+
+  <footer>
+    <small>© 2026 Morrow Core Active</small>
+    <small>Designed for tomorrow</small>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
